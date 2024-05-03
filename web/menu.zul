@@ -1,0 +1,165 @@
+<?page title="COSTOS PORTUARIOS" contentType="text/html;charset=UTF-8"?>
+<?meta name="viewport" content="width=device-width, initial-scale=1.0" ?>
+<?link rel="shortcut icon" type="image/x-icon" href="bootstrap/img/icono.png"?>
+<?link rel="icon" type="image/x-icon" href="bootstrap/img/aqua.png"?>
+<?link href="bootstrap/css/bootstrap.css" rel="stylesheet"?>
+<?link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet"?>
+<?link href="css/all.min.css" rel="stylesheet"?>
+<?link href="css/style.css" rel="stylesheet"?>
+<?link href="css/principal.css" rel="stylesheet"?>
+<?link href="css/M1.css" rel="stylesheet"?>
+<?link href="css/RegistraCitas.css" rel="stylesheet"?>
+
+<zk xmlns:n="native">
+    <style>
+    </style>
+    <script type="text/javascript" defer="true">
+        
+  <!--[CDATA[
+    v1 = zk('$lblUser').$().getValue();
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Acceso Correcto\n'+v1,
+        showConfirmButton: false,
+        timer: 500
+    });
+  ]]-->
+
+  </script>
+    <script src="bootstrap/js/jquery-3.3.1.js" />
+    <script src="bootstrap/js/bootstrap.js" />
+        <window id="wdwMenu"  height="100%" contentStyle="overflow:auto;" apply="Enviroment.menuCtrl">
+        
+        <div class="row text-center" height="100%" style=" border: none; margin: 0; padding:0;  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(172,216,230,0.5)), to(rgba(0,0,0,0.0)));">
+            <n:div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style=" border: none; margin-top:5px; margin-bottom: 5px; padding:0; z-index: 2; " >
+                
+                
+                <n:div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left dvbanner2" width="100%" style="margin:0;">
+                    <n:div class="form-group col-lg-10 col-md-10 col-sm-10 col-xs-10 text-left" style="border: none; padding-left:0; margin-left:0;height:10px;" >
+                        <n:div class="form-group row col-lg-1 col-md-2 col-sm-2 col-xs-3 text-left" style="border:none; margin-left: 0; margin-right:0; padding-right:0px;">
+                            <image src="bootstrap/img/epq.png" width="60px" height="60px" style="margin-top: 15px; margin-left:0; margin-right: 0; padding-right:0;padding-left:0;" />
+                        </n:div>
+                        
+                        <n:div sclass="form-group row col-lg-5 col-md-5 col-sm-5 col-xs-8 text-left" style="border:none; margin-top:23px; margin-left:0; padding-left:0px;">
+                            <label class="ltitle" value="Sistema de Costos Portuarios" style= "font-weight: bold; font-size: 25px; color: white;" />
+                        </n:div>
+                        
+                    </n:div>
+                    <n:div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right" style="margin-top: 5px;padding-right:10px; border:none;">
+                        <n:div sclass="form-group row col-lg-1 col-md-1 col-sm-1 text-left" style="border:none; margin-left:0; padding-right: 0; margin-top: 9%;">
+                            <label id="lblUser" value="usuario" style="font-family: Salamander02; font-weight: bold; font-size: 25px; color: white; margin-right: 15px;" />
+                            <image id="" src="bootstrap/img/usuario.png" width="15%"  height="25%"/>
+                        </n:div>
+                    </n:div>
+                </n:div>
+                
+                
+                <n:nav >
+                    
+                    <n:ul class="salir">
+                        <n:li>
+                            <a class="fa fa-times-circle fa-md" id="linkSalir" href=""> SALIR</a>
+                        </n:li>
+                    </n:ul>
+                    <n:ul>
+                        <n:li>
+                            <a class="fa fa-home fa-md" id="linkHOME" href=""> HOME</a>
+                        </n:li>
+                     
+                        <n:li>
+                            <a class="fa fa-suitcase" id="linkLAD" href="" label=""> ADMINISTRAR</a>
+                            <n:ul>
+                                <n:li style="text-align:left" >
+                                    <n:li style="text-align:left">
+                                    <a id="" href=""  >USUARIO
+                                        <span class="fa fa-plus" style="margin-left:60px;" ></span>
+                                    </a>
+                                    <n:ul>
+                                        <n:li>
+                                            <a id="linkLUS" href="">REGISTRO USUARIO</a>
+                                        </n:li>
+                                        <n:li>
+                                            <a id="linkLUSUP" href="">ACTUALIZA USUARIO</a>
+                                        </n:li>
+                                    </n:ul>
+                                    
+                                    </n:li>
+                                </n:li>
+                          
+                                
+                            </n:ul>
+                        </n:li>
+                        
+                        <n:li>
+                            <a class="fa fa-graduation-cap" id="linkLPR" href="" label=""> PROCESOS</a>
+                            <n:ul>
+                                
+                                <n:li style="text-align:left" >
+                                    <a id="linkPARA" href="">PARAMETROS</a>
+                                </n:li>
+                                
+                                
+                                <!--
+                                <n:li style="text-align:left" >
+                                    <a id="linkLVT" href="">VENTAS<span class="fa fa-plus" style="margin-left:75px;" ></span></a>
+                                </n:li>
+                                
+                                <n:li style="text-align:left" >
+                                    <a id="linkLGS" href="">GASTOS<span class="fa fa-plus" style="margin-left:75px;" ></span></a>
+                                  
+                                </n:li>-->
+                                
+                            </n:ul>
+                        </n:li>
+                        
+                     <!--    <n:li>
+                            <a class="fa fa-suitcase" id="linkRPOR" href="" label=""> REPORTES</a>
+                            <n:ul>
+                                
+                                <n:li style="text-align:left" >
+                                    <a id="linkReporteN" href="">REPORTE NOTAS<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
+                                </n:li>
+                                
+                                
+                                
+                                <n:li style="text-align:left" >
+                                    <a id="linkPDF" href="">REPORTE PDF<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
+                                </n:li>
+                                  
+                                <n:li style="text-align:left" >
+                                    <a id="linkPDFAdmin" href="">REPORTE PDF ADMIN<span class="fa fa-plus" style="margin-left:0px;" ></span></a>
+                                </n:li>
+                                <n:li style="text-align:left" >
+                                    <a id="linkPromedio" href="">PROMEDIOS POR GRADO<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
+                                </n:li>
+                                <n:li style="text-align:left" >
+                                    <a id="linkPDFAdminPro" href="">PROMEDIOS POR GRADO ADMIN<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
+                                </n:li>
+                                <n:li style="text-align:left" >
+                                    <a id="linkPDFestudiantes" href="">REPORTE ESTUDIANTES<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
+                                </n:li>
+                                
+                               
+                               
+                            </n:ul>
+                        </n:li> -->
+                        
+                    </n:ul>
+                    
+                </n:nav>
+                
+            </n:div>
+            
+            <n:div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" width="100%" height="100%" style="z-index: 1;" >
+                <include id="rootPagina" style="margin-top:20px;" />
+            </n:div>
+            
+            <n:div id="inferior" class="justify-content-center" style="background-color: #e24315;">
+                <span style="font-weight: bold; font-size: 15px; color: white;">Ⓒ Copyright 2024 Empresa Portuaria Quetzal</span>
+            </n:div>
+        
+        </div>
+    </window>
+                    
+</zk>

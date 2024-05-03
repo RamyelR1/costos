@@ -1,0 +1,102 @@
+<?page title="COSTOS PORTUARIOS" contentType="text/html;charset=UTF-8"?>
+<?meta name="viewport" content="width=device-width, initial-scale=1.0" ?>
+<?link rel="shortcut icon" type="image/x-icon" href="bootstrap/epq.png"?>
+<?link rel="icon" type="image/x-icon" href="bootstrap/epq.png"?>
+<?link href="bootstrap/css/bootstrap.css" rel="stylesheet"?>
+<?link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet"?>
+
+
+<zk xmlns:n="native">
+    <style>
+        .dvbanner2 {
+        background-color: #232651;
+        height: 90px;
+        }
+        
+        .z-loading { top: 50% !important; left: 45% !important; align:
+        center; vertical-align: middle; 
+        /*border: 10px solid #f3f3f3;*/
+        border: 10px solid transparent;
+        border-radius: 50%;
+        border-top: 10px solid #3498db;
+        border-left: 10px solid #3498db;
+        border-right: 10px solid #3498db;
+        background-color: transparent;
+        width: 100px;
+        height: 100px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+        }
+        
+        .z-loading-indicator {
+        border: 0px;
+        display:none;
+        }
+        
+        /* Safari */
+        
+        @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
+        
+    </style>
+    <script src="bootstrap/js/jquery-3.3.1.js" />
+    <script src="bootstrap/js/bootstrap.js" />
+    <script src="bootstrap/js/sweetalert2.all.min.js" />
+    <window title="" border="none" style="background: transparent; "
+            hflex="true" vflex="true" apply="Enviroment.Login" class="col-md-12">
+        
+        <div class="row text-center" height="100%" style=" border: none; margin: 0; padding:0;  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(175,216,230,0.2)), to(rgba(0,0,0,0.0)));">
+            <n:div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style=" border: none; margin-top:5px; margin-bottom: 0; padding:0;">
+                
+                <n:div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left dvbanner2" width="100%" style="margin:0;">
+                    <n:div class="form-group row col-lg-1 col-md-2 col-sm-2 col-xs-4 text-left" style="border:none; margin-right:0; padding-right: 0;">
+                        <image src="bootstrap/img/epq.png" width="80px" height="80px" style="margin-top: 5px; margin-left:15px; padding:0;" />
+                    </n:div>
+                    <n:div sclass="form-group row col-lg-1 col-md-1 col-sm-2 col-xs-3 text-left" style="border:none; margin-top:15px; margin-left:0; padding-left:0px;">
+                        <label value="Empresa Portuaria Quetzal" style="font-weight: bold; font-size: 18px; color: white; margin-left:0; padding-left:0px;"/>
+                    </n:div>
+                
+                    <n:div sclass="form-group row col-lg-1 col-md-1 col-sm-1 col-xs-3 text-left" style="border:none; margin-left:0; padding-left:0px;">
+                        <label value="Sistema de Costos Portuarios"  style="font-weight: bold; color: white; font-size: 17px;" />
+                    </n:div>
+                    
+                    <n:div sclass="form-group row col-lg-1 col-md-1 col-sm-1 col-xs-3 text-left" style="border:none; margin-left:0; padding-left: 0px;">
+                        <label value="Area de Sistemas" style="font-weight: bold; font-size: 14px; color: white;"/>
+                    </n:div>
+                    
+                </n:div>
+                
+                <div class="loginBox">
+    
+                    <n:h1 id="hlog" style="margin-top:50px; margin-bottom:30px; color:black; " >Login</n:h1>
+                    <div class="form-group" style="text-align: left; margin-top:15px; margin-left:10px;  padding-right: 0;">
+                        <label id="lab0" value="" ></label>
+                        <label id="" class="llog" value="Usuario" style=""/>
+                        <textbox class="form-control textbox" id="txtUser" style="margin-top:10px;" maxlength="30" width="250px" constraint="no empty: Debe ingresar su usuario" focus="true" placeholder="INGRESAR USUARIO"/>
+                    
+                        <label class="llog" value="Clave" style=""/>
+                        <textbox class="form-control " id="txtPass" type="password" style="margin-top:10px;" maxlength="30" width="250px" constraint="no empty: Debe ingresar su clave" placeholder="INGRESAR CLAVE"/>
+                        
+                        <button  id="btnLogin" label="Inicio" type="button" class="btn btn-primary btn-lg" style="float: right" />
+                    </div>
+                    
+                </div> 
+            </n:div>
+            
+            <n:div id="inferior" class="justify-content-center" style="background-color: #e24315;">
+                <span style="font-weight: bold; font-size: 15px; color: white;">Ⓒ Copyright 2024 Empresa Portuaria Quetzal</span>
+            </n:div>
+        
+        </div>
+        
+    </window>
+    
+
+</zk>

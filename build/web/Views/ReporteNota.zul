@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns:n="native" >
+    <style>
+        .z-comboitem{
+        height: 35px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 15px;
+        }
+        
+        .z-combobox-button{
+        height:35px;
+        width:35px;
+        text-align: center;
+        }
+        
+        .z-combobox-input{
+        height:35px;
+        }
+        
+        .z-bandbox-button{
+        height:35px;
+        width:35px;
+        text-align: center;
+        }
+        
+        .z-bandbox-input {
+        height:35px;
+        width:200px;
+        }
+        
+        .z-datebox-input{
+        height:35px;
+        font-size: 15px;
+        }
+        
+        .z-datebox-button{
+        height:35px;
+        width:35px;
+        text-align: center;
+        }
+        
+        .z-timebox-input{
+        height:35px;
+        font-size: 15px;
+        }
+        
+        .z-timebox-button{
+        height:35px;
+        width:35px;
+        text-align: center;
+        }
+        
+        .z-listbox-header {
+        background: lightgray;
+        }
+        
+        .z-auxhead {
+        /*padding: 8px;*/
+        /*color:#FFF;	*/
+        color:black;
+        white-space: pre-wrap;
+        /*background: rgb(135, 206, 250,.7);*/
+        border-top-left-radius: 20px;
+        }
+        
+        .z-listheader-content{
+        color: black !important;
+        text-align: center;
+        /*background: rgb(135, 206, 250,.4);*/
+        background: aliceblue;
+        }
+        
+        .mycss-listcell{
+        font-weight: bold; font-size: 15px;
+        color:black;
+        background: rgb(128, 128, 128,0.1);
+        text-align: left;
+        cursor: pointer;
+        height:40px;
+        border-bottom: 1px solid black;
+        }
+        
+        .mycss-listcel2{
+        height: 30px;
+        margin-top: 10px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        font-weight: bold; font-size: 15px;
+        color:black;
+        height:30px;
+        text-align: center;
+        cursor:pointer;
+        /*background: rgb(128, 128, 128,0.2);*/
+        background: aliceblue;
+        border-bottom: 1px solid black;
+        }
+        
+        .mycss-listcell:hover{
+        font-weight: bold; font-size: 15px;
+        color:black;
+        height:30px;
+        text-align: center;
+        cursor:pointer;
+        background: rgb(128, 128, 128,0.9);}
+        
+    </style>
+        <div  xmlns:n="native" sclass="col-md-12 col-sm-12"  >
+        
+    <groupbox
+        style="margin: 0 auto; border-radius: 5px; box-shadow: 1px 1px 1px"
+        closable="false" width="100%" mold="3d">
+             
+        <div sclass="col col-md-12 col-sm-12" id="formGrid" visible="true">
+            <div sclass="row" >
+                <div sclass="col-md-1">
+           
+                </div>
+                <div sclass="col-md-10">
+            
+                         
+                    <div sclass="row" >
+                        <div sclass="col-md-4">
+                            <label value="BIMESTRE"  style="font-weight:bold;"  />
+                            <combobox id="bimestre" readonly="true"  width="100%" value="" >
+                                <comboitem label = "TODOS" value = "0" />
+                                <comboitem label = "POSEIDON" value = "54" />
+                                <comboitem label = "TIKAL" value = "68" />                     
+                            </combobox>
+                        </div>
+                        <div sclass="col-md-3">
+                            <label value="FECHA " style="font-weight:bold;"  />
+                            <datebox   id="txtFecha" format="dd/MM/yyyy"  width="100%" />
+                     
+                        </div>
+                        <div sclass="col-md-2">
+                            <label value="NUMERO BOLETA " style="font-weight:bold;"  />
+                            <textbox   id="txtBoleta"  width="100%"  />
+                        </div>
+                        <div sclass="col-md-3">
+                             <n:br/>
+                            <button label="Buscar"  width="100%"    id="btnBuscar" sclass="btn btn-primary btn-md" />
+                        </div>
+                    </div>
+                </div>
+                    
+                <div sclass="col-md-1"/>
+            </div>
+            <n:br/>
+            <separator/>
+            <grid sclass="domain"  mold="paging"  pageSize="10"  id="dataGrid" emptyMessage="NO HAY NOTAS">
+                <columns>
+                    <column label="Fecha"  sort="auto"  width ="5%"/>
+                    <column label="TRB"  sort="auto"  width ="5%"/>
+                    <column label="Buque"  sort="auto"  width ="20%"/>
+                    <column label="Remolcador"  sort="auto"  width ="20%"/>
+                    <column label="Boleta"   sort="auto" width ="5%" />
+                    <column label="Operacion"   sort="auto"  width ="10%"/>
+                    <column label="Maniobra"  sort="auto"  width ="10%"/>
+                   <!-- <column label="Inicio"  sort="auto"  width ="5%"/>
+                    <column label="Fin"  sort="auto"  width ="5%"/>
+                    <column label="Acciones"  width ="15%"/>-->
+                </columns>
+                <rows id="rows">
+                </rows>
+            </grid>
+                 
+        </div>
+    </groupbox>    
+</div>
+</zk>

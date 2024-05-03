@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/02/2021, 08:13:27 AM
+    Author     : Informatica
+*/
+
+@font-face {
+    font-family: "Satisfy02";
+    src: url("../font/Satisfy-Regular.ttf") format('truetype');
+}
+
+.hprincipal {
+    font-family: "Satisfy02";
+    word-wrap: break-word; 
+    /*font-weight: bold; */
+    font-size: 45px; 
+    color: black; 
+    margin-left:30px; 
+    padding-left:0px;
+}
+
+
+.mydiv1 {
+    text-align: left;
+    /*margin-top: 100px;*/
+}
+
+.mydiv2 {
+    text-align: center;
+}
+
+.myrow{
+    background: lightgray;
+    width: 90%;
+    height: 100%;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.myrowRU{
+    background: lightgray;
+    width: 75%;
+    height: 100%;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.mylabel{
+    font-weight: bold; 
+    font-size: 20px; 
+    margin-left:0px; 
+    color:wblack; 
+    /*text-transform:uppercase;*/
+}
+
+.myform{
+    /*background: lightgray;*/
+    /*background:  #fdfefe ;*/
+    width: 75%;
+    height: 100%;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.myformRU{
+    background: lightgray;
+    width: 50%;
+    height: 100%;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+.z-combobox-input{
+    height: 47px;
+    font-size: 25px;
+}
+
+.z-combobox-button{
+    height: 47px;
+    padding: 11px;
+}
+
+.z-comboitem {
+    font-size:25px
+}
+
+.form-control{
+    font-size: 25px;
+    font-weight: bold;
+    height: 48px;
+}
+
+.z-bandbox-button{
+    height:47px;
+    width:35px;
+    text-align: center;
+}
+
+.z-bandbox-input {
+    height:47px;
+    
+}
+
+
+/*
+.z-comboitem{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.z-combobox-button{
+    height:35px;
+    width:35px;
+    text-align: center;
+}
+.z-combobox-input{
+    height:35px;
+}
+
+.z-bandbox-button{
+    height:35px;
+    width:35px;
+    text-align: center;
+}
+.z-bandbox-input {
+    height:35px;
+    width:200px;
+}
+*/
+
+.z-datebox-input{
+    height:47px;
+    font-size: 25px;
+}
+
+.z-datebox-button{
+    height:47px;
+    width:35px;
+    text-align: center;
+}
+
+.z-timebox-input{
+    height:47px;
+    font-size: 25px;
+}
+.z-timebox-button{
+    height:47px;
+    width:35px;
+    text-align: center;
+}

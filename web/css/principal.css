@@ -1,0 +1,123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-abr-2020, 10:49:38
+    Author     : alfonsochang
+*/
+
+/*-----------------------   Tipo de Letra ---------------*/
+@font-face {
+    font-family: "Salamander02";
+    src: url("../font/SALAMANDER.ttf") format('truetype');
+}
+/*-----------------------   Login   -----------------------*/
+
+/*-----------------------   Baner Principal ---------------*/
+.dvbanner {
+    background-color: #232651;
+    /*background: url("../bootstrap/img/fondo.png") repeat !important; */
+}
+
+
+/*-----------------------   Login   -----------------------*/
+
+#hlog {
+    font-size: 50px;
+    font-family: "Salamander02", cursive;
+}
+
+.llog {
+    font-size: 25px;
+    font-family: "Salamander02";
+}
+
+
+.loginBox{
+    position: absolute;
+    margin-top: 400px;
+    border-radius: 5%;
+    /*top: 50%; */
+    padding: 10px 40px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    box-sizing: border-box;
+    /*background: rgba(0,206,209,0.1);*/
+    background: rgba( 135, 54, 0 , 0.1);
+}
+
+.user{
+    width: 10px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
+    border: none;
+    border-bottom: 1px solid ;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+/*-----------------------   label   -----------------------*/
+
+.txtlbs{
+    /*
+    text-transform: uppercase; 
+    word-wrap: break-word; */
+    line-height: 10px !important;
+    padding-right: 0;
+    /*overflow: hidden;
+    /*display: inline-block;*/
+    /*text-align: justify;*/
+    color: black; 
+    font-weight: bold; 
+    font-size: 13px !important; 
+    margin-right:0px;
+}
+
+.dvlb{
+     margin-left: 0;padding-left: 15px; margin-right:0; margin-top:0; padding-right: 0;
+}
+
+.dvtx{
+    margin-top:0; padding-left:10px;
+}
+
+.dvfl{
+    border: none; margin-top:0; margin-bottom:0; padding:0;
+}
+
+ #inferior{
+/*color: #FFF;*/
+color: #000;
+/*background: #e24315;*/
+background: transparent;
+position:absolute; /*El div será ubicado con relación a la pantalla*/
+left:0px; /*A la derecha deje un espacio de 0px*/
+right:0px; /*A la izquierda deje un espacio de 0px*/
+bottom:0px; /*Abajo deje un espacio de 0px*/
+height:40px; /*alto del div*/
+z-index:0;
+ }

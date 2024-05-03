@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns:n="native" >
+    <style>
+        .z-comboitem{
+        height: 35px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 15px;
+        }
+        
+        .z-combobox-button{
+        height:35px;
+        width:35px;
+        text-align: center;
+        }
+        
+        .z-combobox-input{
+        height:35px;
+        }
+        
+        .z-bandbox-button{
+        height:35px;
+        width:35px;
+        text-align: center;
+        }
+        
+        .z-bandbox-input {
+        height:35px;
+        width:200px;
+        }
+        
+        .z-datebox-input{
+        height:35px;
+        font-size: 15px;
+        }
+        
+        .z-datebox-button{
+        height:35px;
+        width:35px;
+        text-align: center;
+        }
+        
+        .z-timebox-input{
+        height:35px;
+        font-size: 15px;
+        }
+        
+        .z-timebox-button{
+        height:35px;
+        width:35px;
+        text-align: center;
+        }
+        
+        .z-listbox-header {
+        background: lightgray;
+        }
+        
+        .z-auxhead {
+        /*padding: 8px;*/
+        /*color:#FFF;	*/
+        color:black;
+        white-space: pre-wrap;
+        /*background: rgb(135, 206, 250,.7);*/
+        border-top-left-radius: 20px;
+        }
+        
+        .z-listheader-content{
+        color: black !important;
+        text-align: center;
+        /*background: rgb(135, 206, 250,.4);*/
+        background: aliceblue;
+        }
+        
+        .mycss-listcell{
+        font-weight: bold; font-size: 15px;
+        color:black;
+        background: rgb(128, 128, 128,0.1);
+        text-align: left;
+        cursor: pointer;
+        height:40px;
+        border-bottom: 1px solid black;
+        }
+        
+        .mycss-listcel2{
+        height: 30px;
+        margin-top: 10px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        font-weight: bold; font-size: 15px;
+        color:black;
+        height:30px;
+        text-align: center;
+        cursor:pointer;
+        /*background: rgb(128, 128, 128,0.2);*/
+        background: aliceblue;
+        border-bottom: 1px solid black;
+        }
+        
+        .mycss-listcell:hover{
+        font-weight: bold; font-size: 15px;
+        color:black;
+        height:30px;
+        text-align: center;
+        cursor:pointer;
+        background: rgb(128, 128, 128,0.9);}
+        
+    </style>
+
+
+    <div>
+        <n:br/>
+        <n:br/>
+        <n:br/>
+        <n:br/>
+    </div>
+    <div class="col col-md-12 col-sm-12" apply="Ctrl.NotasPDFCtrl" >
+        <div class="col col-md-12 col-sm-12 text-center"> 
+            <div class="col col-md-12 col-xs-12">
+                <label value="REPORTE DE NOTAS PDF" style="font-size:25px;font-weight:bold;color:blue;" />
+            </div>
+            <n:br/>
+            <n:br/>
+            <n:br/>
+            
+            <div sclass="col-md-12 col-sm-12 text-center" > 
+               
+                <label value="FECHA GENERACION" style="color: blue; font-weight: bold; font-size: 20px;"/>
+                <datebox id="fechaG" cols="11"   format="dd/MM/yyyy" locale="gt" onCreate="self.value = new Date()" style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black;"/>
+                <combobox id="bimestre" width="20%" readonly="true" >
+                    
+                    <comboitem label = "PRIMER BIMESTRE" value = "1" />
+                    <comboitem label = "SEGUNDO BIMESTRE" value = "2" /> 
+                    <comboitem label = "TERCER BIMESTRE" value = "3" />
+                    <comboitem label="CUARTO BIMESTRE" value = "4"/>
+                             
+                                
+                </combobox>
+            </div> 
+            
+            <n:br/>
+            <n:br/>
+            <n:br/>
+            
+            <div class="col col-md-12 col-xs-12">
+                
+                <button sclass="btn btn-success" id="btnDescargar" label="Descargar Reporte" iconSclass="z-icon-download" />    
+                
+            </div>
+        </div>
+    </div>
+</zk>

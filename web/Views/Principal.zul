@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns:n="native">
+
+        <div class="col col-md-12 col-sm-12 text-center" style=" font-weight: bold; font-size: 15px; color: white; margin-right: 15px;" >
+            <n:h1 class="hprincipal" style="font-family: Salamander02; font-weight: bold;">Sistema de Costos Portuarios</n:h1>
+            <image id="" src="bootstrap/img/fondo.jpg" width="40%"  height="40%"/>
+        </div>
+</zk>
