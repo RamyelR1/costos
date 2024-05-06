@@ -22,6 +22,16 @@ public class ParametrosMd {
     private String resp;
     private String msg;
 
+    public String user;
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
     public String getCod() {
         return cod;
     }
