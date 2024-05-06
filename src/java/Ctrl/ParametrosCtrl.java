@@ -12,7 +12,6 @@ import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.util.Clients;
 import org.zkoss.zk.ui.util.GenericForwardComposer;
 import org.zkoss.zul.Combobox;
-import org.zkoss.zul.ListModelList;
 import org.zkoss.zul.Listbox;
 
 public class ParametrosCtrl extends GenericForwardComposer {
