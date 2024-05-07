@@ -45,11 +45,11 @@ public class NormativoCtrl extends GenericForwardComposer {
                 if (dt.getCod().equals(codigo.getText())) {
                     codigo.focus();
                     codigo.setText(dt.getCod());
-                    nombre.setText(dt.getNombre()); // Cambio: se establece el valor del campo nombre
-                    categoria.setText(dt.getCategoria()); // Cambio: se establece el valor del campo categoria
-                    valor.setText(dt.getValor()); // Cambio: se establece el valor del campo valor
-                    cantidad.setText(dt.getCantidad()); // Cambio: se establece el valor del campo cantidad
-                    validez.setText(dt.getValidez()); // Cambio: se establece el valor del campo validez
+                    nombre.setText(dt.getNombre()); 
+                    categoria.setText(dt.getCategoria()); 
+                    valor.setText(dt.getValor()); 
+                    cantidad.setText(dt.getCantidad()); 
+                    validez.setText(dt.getValidez()); 
                 }
             }
         }
@@ -67,20 +67,17 @@ public class NormativoCtrl extends GenericForwardComposer {
         if (op == 0) {
             norMd = new NormativoMd();
             norMd.setCod(codigo.getText());
-            norMd.setNombre(nombre.getText()); // Cambio: se obtiene el valor del campo nombre
-            norMd.setCategoria(categoria.getSelectedItem().getValue().toString()); // Cambio: se obtiene el valor del campo categoria
-            norMd.setValor(valor.getText().toUpperCase()); // Cambio: se obtiene el valor del campo valor
-            norMd.setCantidad(cantidad.getText().toUpperCase()); // Cambio: se obtiene el valor del campo cantidad
-            norMd.setValidez(validez.getText()); // Cambio: se obtiene el valor del campo validez
+            norMd.setNombre(nombre.getText()); 
+            norMd.setCategoria(categoria.getSelectedItem().getValue().toString()); 
+            norMd.setValor(valor.getText().toUpperCase()); 
+            norMd.setCantidad(cantidad.getText().toUpperCase()); 
+            norMd.setValidez(validez.getText()); 
 
-            // Verificar si el registro ya existe
             boolean existeRegistro = normativo.existeRegistro(norMd.getCod());
 
             if (existeRegistro) {
-                // Actualizar registro
                 norMd = normativo.updateNormativo(norMd);
             } else {
-                // Guardar nuevo registro
                 norMd = normativo.saveNormativo(norMd);
             }
 
@@ -105,11 +102,11 @@ public class NormativoCtrl extends GenericForwardComposer {
 
     public void clear() {
         codigo.setText("");
-        nombre.setText(""); // Cambio: se limpia el campo nombre
-        categoria.setSelectedIndex(-1); // Cambio: se limpia el campo categoria
-        valor.setText(""); // Cambio: se limpia el campo valor
-        cantidad.setText(""); // Cambio: se limpia el campo cantidad
-        validez.setValue(null); // Cambio: se limpia el campo validez
+        nombre.setText(""); 
+        categoria.setSelectedIndex(-1); 
+        valor.setText(""); 
+        cantidad.setText("");
+        validez.setValue(null);
 
         codigo.focus();
     }
