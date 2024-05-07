@@ -13,8 +13,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="Group 20210428-08:47:08"/>
         <group>
-            <file>file:/C:/Users/Ludvin%20Alonzo/Documents/GitHub/costos/web/menu.zul</file>
-            <file>file:/C:/Users/Ludvin%20Alonzo/Documents/GitHub/costos/web/Views/Parametros.zul</file>
+            <file>file:/C:/Users/Ludvin%20Alonzo/Documents/GitHub/costos/src/java/Ctrl/ParametrosCtrl.java</file>
+            <file>file:/C:/Users/Ludvin%20Alonzo/Documents/GitHub/costos/web/Views/Normativo.zul</file>
+            <file>file:/C:/Users/Ludvin%20Alonzo/Documents/GitHub/costos/src/java/Ctrl/NormativoCtrl.java</file>
+            <file>file:/C:/Users/Ludvin%20Alonzo/Documents/GitHub/costos/src/java/Dal/NormativoDal.java</file>
+            <file>file:/C:/Users/Ludvin%20Alonzo/Documents/GitHub/costos/src/java/Modelo/ParametrosMd.java</file>
+            <file>file:/C:/Users/Ludvin%20Alonzo/Documents/GitHub/costos/src/java/Modelo/NormativoMd.java</file>
+            <file>file:/C:/Users/Ludvin%20Alonzo/Documents/GitHub/costos/src/java/Dal/ParametrosDal.java</file>
         </group>
     </open-files>
 </project-private>
