@@ -19,7 +19,7 @@ public class LoginDal {
         ResultSet result = null;
         int resultado = 0;
         
-        System.out.println("Credenciales.: " + usuario);
+        System.out.println("USUARIO.: " + usuario);
         String sql = "select trim(usuario)as usuario, trim(clave) as pass \n" +
 "from control_visita.usuarios where trim(usuario) ='"+usuario+"'";
         

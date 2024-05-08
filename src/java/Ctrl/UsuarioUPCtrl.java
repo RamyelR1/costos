@@ -49,28 +49,6 @@ public class UsuarioUPCtrl extends GenericForwardComposer {
 
         if (us.getResp().equals("1")) {
           
-//            if (us.getRol().equals("A")) {
-//                rol.setSelectedIndex(0);
-//            }
-//            if (us.getRol().equals("U")) {
-//                rol.setSelectedIndex(1);
-//            }
-//            nacimi.setText(us.getFecha_nacimiento());
-//            if (us.getStatus().equals("1")) {
-//                status.setSelectedIndex(0);
-//            }
-//            if (us.getStatus().equals("2")) {
-//                status.setSelectedIndex(1);
-//            }
-//            if (us.getGenero().equals("F")) {
-//                sexo.setSelectedIndex(0);
-//            }
-//            if (us.getGenero().equals("M")) {
-//                sexo.setSelectedIndex(1);
-//            }
-
-//            Clients.showNotification(us.getMsg() + "<br/>",
-//                    Clients.NOTIFICATION_TYPE_INFO, null, "middle_center", 0);
         } else {
             usu.setText("");
             usu.setDisabled(false);

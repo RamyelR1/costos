@@ -177,10 +177,6 @@
                         <button id="btnNuevo" label="Limpiar" image="bootstrap/img/Limpiar.png" orient="vertical" height="75px" width="75px" style="border-radius: 40px;" />
                     </n:div>
                         
-                    <n:div class="form-group col-lg-2 col-md-3 col-sm-3 col-xs-3 mydiv1" style="text-align:center;" >
-                        <button id="btnDelete" label="Borrar" image="bootstrap/img/Borrar.png" orient="vertical" height="75px" width="75px" style="border-radius: 40px;" />
-                    </n:div>
-                        
                 </n:div>
                 
             </n:div>

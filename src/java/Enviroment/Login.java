@@ -23,10 +23,6 @@ import org.zkoss.zul.Label;
 import org.zkoss.zul.Textbox;
 import org.zkoss.zul.Window;
 
-/**
- *
- * 
- */
 public class Login extends GenericForwardComposer {
 
     private static final long serialVersionUID = 1L;
@@ -44,15 +40,8 @@ public class Login extends GenericForwardComposer {
     public void doAfterCompose(Component comp) throws Exception {
         super.doAfterCompose(comp);
         Execution exec = Executions.getCurrent();
-        HttpServletRequest request = (HttpServletRequest) exec.getNativeRequest();
-        String idd = request.getParameter("p1");
-        String idd2 = request.getParameter("p2");
-        String idd3 = request.getParameter("p3");
-        System.out.println("PARAMETRO #1 RECIBIDO..: " + idd);
-        System.out.println("PARAMETRO #2 RECIBIDO..: " + idd2);
-        System.out.println("PARAMETRO #3 RECIBIDO..: " + idd3);
-        String data = rc.views("1", "1");
-        System.out.println("VISTAS PERMITIDAS..: "+data);
+
+
         lab0.setVisible(false);
     }
 
@@ -98,8 +87,7 @@ public class Login extends GenericForwardComposer {
             }
         } else {
             try {
-                //data = at.UsuarioExiste(txtUser.getValue(), pass1);
-                //data = at.UsuarioExiste(txtUser.getValue(), txtPass.getText());
+                
                 data = at.BuscaUsuario(txtUser.getValue());
                 System.out.println("RESPUESTA.: "+data.getRespuesta());
                 
@@ -115,11 +103,9 @@ public class Login extends GenericForwardComposer {
                         System.out.println("PASSWORD ENCRIPTADA.: " + data.getPass());
                     }
                     if (x == 1) {
-                        System.out.println("VALOR DE USUARIO..: " + data.getUseario());
                         Session InventarioSession = Sessions.getCurrent();
                         InventarioSession.setAttribute("USUARIO", data.getUseario());
                         
-                        //InventarioSession.setAttribute("PASSWORD", txtPass.getValue());
 
                 Bitacora bt = new Bitacora();
                 String rps = bt.login(data.getUseario(), "CitasEPQ", "Login", "null", 0, 0, "Inicio de Session");

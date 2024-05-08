@@ -1,8 +1,5 @@
 package Modelo;
 
-import org.zkoss.zul.Combobox;
-import org.zkoss.zul.Datebox;
-import org.zkoss.zul.Textbox;
 
 public class ParametrosMd {
 

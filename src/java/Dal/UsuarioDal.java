@@ -80,12 +80,9 @@ public class UsuarioDal {
         int resp = 0;
         us = new UsuarioMd();
         String query0 = " SELECT * FROM control_visita.usuarios where usuario = '" + user + "' ";
-        String query1 = " SELECT max(id_usuario)+1 as id FROM control_visita.usuarios";
-        String sql = " INSERT INTO control_visita.usuarios (id_usuario, usuario, clave) "
-                + "VALUES (?,?,?)";
+      
         try {
             conn = obtener.Conexion();
-
             st = conn.createStatement();
             rs = st.executeQuery(query0);
             while (rs.next()) {

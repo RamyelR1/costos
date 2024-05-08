@@ -67,6 +67,10 @@ public class menuCtrl extends GenericForwardComposer {
     public void onClick$linkPARA(Event evt) {
         rootPagina.setSrc("/Views/Parametros.zul");
     }
+    
+    public void onClick$linkPERS(Event evt) {
+        rootPagina.setSrc("/Views/Personal.zul");
+    }
 
     public void onClick$linkLMateria(Event evt) {
         rootPagina.setSrc("/Views/Materia.zul");

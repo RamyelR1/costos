@@ -61,16 +61,20 @@
                             <n:ul>
                                 <n:li style="text-align:left" >
                                     <n:li style="text-align:left">
+                                        
                                     <a id="" href=""  >USUARIO
                                         <span class="fa fa-plus" style="margin-left:60px;" ></span>
                                     </a>
+                                    
                                     <n:ul>
                                         <n:li>
                                             <a id="linkLUS" href="">REGISTRO USUARIO</a>
                                         </n:li>
+                                        
                                         <n:li>
                                             <a id="linkLUSUP" href="">ACTUALIZA USUARIO</a>
                                         </n:li>
+                                                                                
                                     </n:ul>
                                     
                                     </n:li>
@@ -88,16 +92,9 @@
                                     <a id="linkPARA" href="">PARAMETROS</a>
                                 </n:li>
                                 
-                                
-                                <!--
-                                <n:li style="text-align:left" >
-                                    <a id="linkLVT" href="">VENTAS<span class="fa fa-plus" style="margin-left:75px;" ></span></a>
+                                 <n:li style="text-align:left" >
+                                    <a id="linkPERS" href="">PERSONAL</a>
                                 </n:li>
-                                
-                                <n:li style="text-align:left" >
-                                    <a id="linkLGS" href="">GASTOS<span class="fa fa-plus" style="margin-left:75px;" ></span></a>
-                                  
-                                </n:li>-->
                                 
                             </n:ul>
                         </n:li>

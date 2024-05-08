@@ -25,8 +25,6 @@ public class ParametrosCtrl extends GenericForwardComposer {
 
     ParametrosMd prtMd = new ParametrosMd();
     List<ParametrosMd> allParametros = new ArrayList<ParametrosMd>();
-
-    private Listbox lb2;
     
     ParametrosDal parametro = new ParametrosDal();
 

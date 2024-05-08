@@ -117,8 +117,8 @@
                 <n:div class="row ">
                     <n:div class="form-group col-lg-1 col-md-1 "></n:div>
                     <n:div class="form-group col-lg-10 col-md-5 mydiv1">
-                        <label class="mylabel" value="USUARIO" style=""/>
-                        <textbox class="form-control" id="usu" value=""  style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; text-transform:uppercase; "/>
+                        <label class="mylabel" value="USUARIO" style="font-family:Times;"/>
+                        <textbox class="form-control" id="usu" value=""  style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; text-transform:uppercase; font-family:Times;"/>
                     </n:div>
                     
                 </n:div>
@@ -127,8 +127,8 @@
                 <n:div class="row ">
                     <n:div class="form-group col-lg-1 col-md-1 "></n:div>
                     <n:div class="form-group col-lg-10 col-md-5 mydiv1">
-                        <label class="mylabel" value="CLAVE" style=""/>
-                        <textbox class="form-control" id="clave" value=""  style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; text-transform:uppercase; "/>
+                        <label class="mylabel" value="CLAVE" style="font-family:Times;"/>
+                        <textbox class="form-control" id="clave" value=""  style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; text-transform:uppercase; font-family:Times;"/>
                     </n:div> 
                 </n:div>
                 
@@ -143,10 +143,6 @@
                         <button id="btnNuevo" label="Limpiar" image="bootstrap/img/Limpiar.png" orient="vertical" height="75px" width="75px" style="border-radius: 40px;" />
                     </n:div>
                         
-                    <n:div class="form-group col-lg-2 col-md-3 col-sm-3 col-xs-3 mydiv1" style="text-align:center;" >
-                        <button id="btnDelete" label="Borrar" image="bootstrap/img/Borrar.png" orient="vertical" height="75px" width="75px" style="border-radius: 40px;" />
-                    </n:div>
-                    
                 </n:div>
                 
             </n:div>

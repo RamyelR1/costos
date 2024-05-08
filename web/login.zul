@@ -75,7 +75,8 @@
                 
                 <div class="loginBox">
     
-                    <n:h1 id="hlog" style="margin-top:50px; margin-bottom:30px; color:black; " >Login</n:h1>
+                     <n:h1 style="color:black;font-family:Times;">LOGIN</n:h1>
+                    
                     <div class="form-group" style="text-align: left; margin-top:15px; margin-left:10px;  padding-right: 0;">
                         <label id="lab0" value="" ></label>
                         <label id="" class="llog" value="Usuario" style=""/>
