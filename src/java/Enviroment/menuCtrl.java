@@ -73,7 +73,7 @@ public class menuCtrl extends GenericForwardComposer {
     }
 
     public void onClick$linkTAR(Event evt) {
-        rootPagina.setSrc("/Views/Tarifa.zul");
+        rootPagina.setSrc("/Views/Tarifas.zul");
     }
     //MENU LIKS
 
