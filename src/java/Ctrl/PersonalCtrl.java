@@ -11,6 +11,7 @@ import org.zkoss.zul.Textbox;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.util.Clients;
+import org.zkoss.zk.ui.util.GenericForwardComposer;
 import org.zkoss.zul.Combobox;
 import org.zkoss.zul.Listbox;
 
@@ -18,7 +19,7 @@ import org.zkoss.zul.Listbox;
  *
  * @author EL R1
  */
-public class PersonalCtrl {
+public class PersonalCtrl extends GenericForwardComposer {
 
     private Textbox codigo;
     private Textbox nombre;
