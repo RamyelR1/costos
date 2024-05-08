@@ -72,56 +72,8 @@ public class menuCtrl extends GenericForwardComposer {
         rootPagina.setSrc("/Views/Personal.zul");
     }
 
-    public void onClick$linkLMateria(Event evt) {
-        rootPagina.setSrc("/Views/Materia.zul");
-    }
-
-    public void onClick$linkLNota(Event evt) {
-        rootPagina.setSrc("/Views/Notas.zul");
-    }
-
-    public void onClick$linkReporteN(Event evt) {
-        rootPagina.setSrc("/Views/ReporteNota.zul");
-    }
-
-    public void onClick$linkPDF(Event evt) {
-        rootPagina.setSrc("/Views/NotasPDF.zul");
-    }
-
-    public void onClick$linkPDFAdmin(Event evt) {
-        rootPagina.setSrc("/Views/NotasPDFAdmi.zul");
-    }
-
-    public void onClick$linkLCM(Event evt) {
-        rootPagina.setSrc("/Views/Grados.zul");
-    }
-
-    public void onClick$linkLNotaop(Event evt) {
-        rootPagina.setSrc("/Views/NotasOP.zul");
-    }
-
-    public void onClick$linkPDFestudiantes(Event evt) {
-        rootPagina.setSrc("/Views/ReporteEstudiantes.zul");
-    }
-
-    public void onClick$linkLGSPRU(Event evt) {
-        rootPagina.setSrc("/Views/PruebaG.zul");
-    }
-
-    public void onClick$linkPromedio(Event evt) {
-        rootPagina.setSrc("/Views/Promedio.zul");
-    }
-
-    public void onClick$linkCOMRPOR(Event evt) {
-        rootPagina.setSrc("/Views/ReporteCompras.zul");
-    }
-
-    public void onClick$linkPDFAdminPro(Event evt) {
-        rootPagina.setSrc("/Views/PromedioAdmin.zul");
-    }
-
-    public void onClick$linkLGSRPOR(Event evt) {
-        rootPagina.setSrc("/Views/ReporteGastos.zul");
+    public void onClick$linkNOR(Event evt) {
+        rootPagina.setSrc("/Views/Normativo.zul");
     }
 
      //MENU LIKS
