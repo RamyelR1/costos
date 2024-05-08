@@ -118,13 +118,13 @@
                     <n:div class="form-group col-lg-1 col-md-1 "></n:div>
                     <n:div class="form-group col-lg-5 col-md-5 mydiv1">
                         <label class="mylabel" value="CODIGO" style=""/>
-                        <textbox class="form-control" id="codigo" value=""  style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; text-transform:uppercase; "/>
+                        <doublebox class="form-control" id="codigo" style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; "/>
                     </n:div>
                     
                     <n:div class="form-group col-lg-1 col-md-1 "></n:div>
                     <n:div class="form-group col-lg-5 col-md-5 mydiv1">
                         <label class="mylabel" value="NORMATIVO" style=""/>
-                        <textbox class="form-control" id="nombre" value=""  style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; text-transform:uppercase; "/>
+                        <textbox class="form-control" id="nombre" style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; text-transform:uppercase; "/>
                     </n:div>
                 
                 </n:div>
@@ -142,7 +142,7 @@
                     <n:div class="form-group col-lg-1 col-md-1 "></n:div>
                     <n:div class="form-group col-lg-5 col-md-5 mydiv1">
                         <label class="mylabel" value="VALOR" style=""/>
-                        <textbox class="form-control" id="valor" value=""  style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; text-transform:uppercase; "/>
+                        <doublebox class="form-control" id="valor"  style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; "/>
                     </n:div>
                     
                 </n:div>
@@ -153,7 +153,7 @@
                     <n:div class="form-group col-lg-1 col-md-1 "></n:div>
                     <n:div class="form-group col-lg-5 col-md-5 mydiv1">
                         <label class="mylabel" value="CANTIDAD" style=""/>
-                        <textbox class="form-control" id="cantidad" value=""  style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black; text-transform:uppercase; "/>
+                        <doublebox class="form-control" id="cantidad" style="font-weight: bold; font-size: 15px; margin-left:0px; heigh:20px; color:black;"/>
                     </n:div>
                         
                     <n:div class="form-group col-lg-5 col-md-5 mydiv1">
