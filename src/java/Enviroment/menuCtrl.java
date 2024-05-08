@@ -48,7 +48,6 @@ public class menuCtrl extends GenericForwardComposer {
         }
     };
 
-    //INGRESO Y EGRESO DE CAMIONES
     public void onClick$linkHOME(Event evt) {
         rootPagina.setSrc("/Views/Principal.zul");
     }
