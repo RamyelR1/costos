@@ -12,7 +12,6 @@ import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.util.Clients;
 import org.zkoss.zk.ui.util.GenericForwardComposer;
 import org.zkoss.zul.Combobox;
-import org.zkoss.zul.Listbox;
 
 public class ParametrosCtrl extends GenericForwardComposer {
 
@@ -26,8 +25,6 @@ public class ParametrosCtrl extends GenericForwardComposer {
     ParametrosMd prtMd = new ParametrosMd();
     List<ParametrosMd> allParametros = new ArrayList<ParametrosMd>();
 
-    private Listbox lb2;
-    
     ParametrosDal parametro = new ParametrosDal();
 
     String User;

@@ -87,52 +87,13 @@
                                 <n:li style="text-align:left" >
                                     <a id="linkPARA" href="">PARAMETROS</a>
                                 </n:li>
-                                
-                                
-                                <!--
+
                                 <n:li style="text-align:left" >
-                                    <a id="linkLVT" href="">VENTAS<span class="fa fa-plus" style="margin-left:75px;" ></span></a>
+                                    <a id="linkNOR" href="">NORMATIVO</a>
                                 </n:li>
-                                
-                                <n:li style="text-align:left" >
-                                    <a id="linkLGS" href="">GASTOS<span class="fa fa-plus" style="margin-left:75px;" ></span></a>
-                                  
-                                </n:li>-->
                                 
                             </n:ul>
                         </n:li>
-                        
-                     <!--    <n:li>
-                            <a class="fa fa-suitcase" id="linkRPOR" href="" label=""> REPORTES</a>
-                            <n:ul>
-                                
-                                <n:li style="text-align:left" >
-                                    <a id="linkReporteN" href="">REPORTE NOTAS<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
-                                </n:li>
-                                
-                                
-                                
-                                <n:li style="text-align:left" >
-                                    <a id="linkPDF" href="">REPORTE PDF<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
-                                </n:li>
-                                  
-                                <n:li style="text-align:left" >
-                                    <a id="linkPDFAdmin" href="">REPORTE PDF ADMIN<span class="fa fa-plus" style="margin-left:0px;" ></span></a>
-                                </n:li>
-                                <n:li style="text-align:left" >
-                                    <a id="linkPromedio" href="">PROMEDIOS POR GRADO<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
-                                </n:li>
-                                <n:li style="text-align:left" >
-                                    <a id="linkPDFAdminPro" href="">PROMEDIOS POR GRADO ADMIN<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
-                                </n:li>
-                                <n:li style="text-align:left" >
-                                    <a id="linkPDFestudiantes" href="">REPORTE ESTUDIANTES<span class="fa fa-plus" style="margin-left:10px;" ></span></a>
-                                </n:li>
-                                
-                               
-                               
-                            </n:ul>
-                        </n:li> -->
                         
                     </n:ul>
                     
