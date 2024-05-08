@@ -7,6 +7,7 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import org.zkoss.zul.Textbox;
+import org.zkoss.zul.Doublebox;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.util.Clients;
@@ -16,11 +17,11 @@ import org.zkoss.zul.Datebox;
 
 public class NormativoCtrl extends GenericForwardComposer {
 
-    private Textbox codigo;
+    private Doublebox codigo;
     private Textbox nombre; 
     private Combobox categoria; 
-    private Textbox valor; 
-    private Textbox cantidad; 
+    private Doublebox valor; 
+    private Doublebox cantidad; 
     private Datebox validez; 
     
     NormativoMd norMd = new NormativoMd();
