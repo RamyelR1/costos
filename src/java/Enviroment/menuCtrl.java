@@ -19,7 +19,7 @@ public class menuCtrl extends GenericForwardComposer {
 
     @Wire
     private Include rootPagina;
-    
+
     private A linkLAD;
     String User;
 
@@ -28,13 +28,11 @@ public class menuCtrl extends GenericForwardComposer {
     public void doAfterCompose(Component comp) throws Exception {
         super.doAfterCompose(comp);
         linkLAD.setVisible(false);
-       
-        
 
-         User = desktop.getSession().getAttribute("USUARIO").toString();
+        User = desktop.getSession().getAttribute("USUARIO").toString();
         System.out.println("USUARIO..: " + User);
-         if (User.equals("costos")){
-         linkLAD.setVisible(true);   
+        if (User.equals("costos")) {
+            linkLAD.setVisible(true);
         }
 
         lblUser.setValue(User);
@@ -49,10 +47,9 @@ public class menuCtrl extends GenericForwardComposer {
         public void onEvent(Event evt) throws Exception {
         }
     };
-    
 
     //INGRESO Y EGRESO DE CAMIONES
- public void onClick$linkHOME(Event evt) {
+    public void onClick$linkHOME(Event evt) {
         rootPagina.setSrc("/Views/Principal.zul");
     }
 
@@ -67,7 +64,7 @@ public class menuCtrl extends GenericForwardComposer {
     public void onClick$linkPARA(Event evt) {
         rootPagina.setSrc("/Views/Parametros.zul");
     }
-    
+
     public void onClick$linkPERS(Event evt) {
         rootPagina.setSrc("/Views/Personal.zul");
     }
@@ -76,8 +73,10 @@ public class menuCtrl extends GenericForwardComposer {
         rootPagina.setSrc("/Views/Normativo.zul");
     }
 
-     //MENU LIKS
-
+    public void onClick$linkTAR(Event evt) {
+        rootPagina.setSrc("/Views/Tarifa.zul");
+    }
+    //MENU LIKS
 
     public void onClick$linkSalir(Event evt) {
         String User = desktop.getSession().getAttribute("USUARIO").toString();
