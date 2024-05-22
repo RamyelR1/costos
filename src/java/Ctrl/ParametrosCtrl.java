@@ -64,7 +64,8 @@ public class ParametrosCtrl extends GenericForwardComposer {
             moneda.getText().trim().equals("") || cambio.getText().trim().equals("") || 
             anio.getText().trim().equals("") || status.getSelectedIndex() == -1) {
             op = 1;
-        }
+        }//para los combobox para ver que no se queden sin seleccion
+        
 
         if (op == 0) {
             prtMd = new ParametrosMd();
